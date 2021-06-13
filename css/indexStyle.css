@@ -1,0 +1,20 @@
+header{
+  height: 500px;
+  background-color: rgb(253, 200, 203);
+}
+img{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+h1{
+  font-size: 70px;
+  float: right;
+  margin-top: 200px;
+  margin-right: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main a{
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
