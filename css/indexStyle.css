@@ -6,15 +6,51 @@ img{
   margin-top: 100px;
   margin-left: 50px;
 }
-h1{
+header h1{
   font-size: 70px;
   float: right;
   margin-top: 200px;
   margin-right: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-main a{
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
+main{
+  display: grid;
+  background-color: rgb(195, 195, 255);
+  gap: 30px;
 }
+main a{
+   position: absolute;
+   right: 20px;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+}
+main h1{
+  text-align: center;
+  font-size: 50px;
+}
+ #sec3{
+display: flex;
+justify-content: space-between;
+width: 80%;
+margin-left: 10%;
+}
+#sec4{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+  }
+  h2{
+    font-size: 30px;
+  }
+  section p{
+    font-size: 20px;
+  }
+  #sec5{
+    display: grid;
+    text-align: center;
+  }
+  #sec5 h2{
+    font-size: 50px;
+  }
