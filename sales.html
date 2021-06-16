@@ -13,8 +13,31 @@
     <img src="./images/salmon.png" alt="">
     <h1>Pat's cookie stand</h1>
   </header>
-  <main>
-    <div id='dailySales'></div>
+  <main> 
+    <fieldset>
+    <form id="addBranchForm">
+        <label for="location">New branch location</label>
+        <input type="text" name="locationFill" id="location" placeholder="Amman"><br>
+
+        <label for="mini">New branch expected minimum custemors per hour</label>
+        <input type="number" name="miniFill" id="mini" placeholder="20" min="0" max="1000"
+        step="1"><br>
+
+        <label for="maxi">New branch expected maximum cotumers</label>
+        <input type="number" name="maxiFill" id="maxi" placeholder="100" min="0" max="1000"
+        step="1"><br>
+
+        <label for="avg">New branch average cookies sales per costmer</label>
+        <input type="number" name="avgFill" id="avg"
+        placeholder="5" min="0" max="100"
+        step="0.1"><br>
+
+        <button type="submit">Add branch</button>
+    </form>
+    </fieldset>
+    <div >
+      <table id="table"></table>
+    </div>
     <a href="./index.html">Front page</a>
   </main>
 </body>

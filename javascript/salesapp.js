@@ -2,13 +2,18 @@
 
 const hours = ['6am', '7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
-let citySales=document.getElementById('dailySales');
-let table=document.createElement('table');
-citySales.appendChild(table);
+let table=document.getElementById('table');
+
+let addLocationForm=document.getElementById('addBranchForm');
+
 function getRandomCustomer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
+let deletion=6;
+function rowDeletion() {
+  document.getElementById('table').deleteRow(deletion);
+  deletion++;
+}
 // let seattle = {
 //   name: 'Seattle',
 //   minCust: 23,
@@ -311,3 +316,18 @@ let limaCity= new CookieSalesPerCity('Lima', 2, 16 ,4.6);
 limaCity.customersPurcheses();
 limaCity.tableContent();
 makeTableFooter();
+
+
+function addLocatin(event) {
+  event.preventDefault();
+  let location=event.target.location.value;
+  let mini=event.target.mini.value;
+  let maxi=event.target.maxi.value;
+  let avg=event.target.avg.value;
+  let newLocation= new CookieSalesPerCity(location, mini, maxi,avg);
+  newLocation.customersPurcheses();
+  newLocation.tableContent();
+  makeTableFooter();
+  rowDeletion();
+}
+addLocationForm.addEventListener('submit',addLocatin);
